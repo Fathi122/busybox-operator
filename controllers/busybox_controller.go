@@ -58,7 +58,6 @@ type BusyboxReconciler struct {
 func (r *BusyboxReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 
 	log := ctrllog.FromContext(ctx)
-	// TODO(user): your logic here
 	// Lookup the Busybox instance for this reconcile request
 	// Fetch the Busybox instance
 	busybox := &cachev1alpha1.Busybox{}
